@@ -9,3 +9,5 @@ print("line 1\nline2\njfidjfsijdfi")  #   \n : move down a line
 #1.git init
 #2.create repo and get link
 #3.git remote add origin + Link
+#4.git add .  (A->U)
+#5.git commit -m 'text'
