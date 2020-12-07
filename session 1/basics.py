@@ -11,3 +11,4 @@ print("line 1\nline2\njfidjfsijdfi")  #   \n : move down a line
 #3.git remote add origin + Link
 #4.git add .  (A->U)
 #5.git commit -m 'text'
+#6. git push origin master
