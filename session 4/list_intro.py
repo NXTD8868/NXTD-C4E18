@@ -17,4 +17,14 @@ print(list)
 list.remove('canh')
 print(list)
 list.pop(2)
+delete_item=list.pop(0)#delete by index, then assign to a var
 print(list)
+
+#find index by value
+print(list.index('rau'))
+#check if a value exist or not (return boolean)
+print('rau' in list)
+print('lmao' in list)
+user_input=input('nhap :')
+if user_input in list:
+    print(list.index(user_input))
