@@ -34,6 +34,34 @@ for i in range(len(j)):
 print('updated: ',final)
     
 print(final)
+#bank statement
+acc= input('enter your balance: ')
+acc=list(acc)
+print(acc)
+eli=0
+for i in range(len(acc)):
+    if acc[i]=='0':
+        eli+=1
+    elif acc[i]!='0':
+        break
+print(eli)
+for i in range(eli):
+    acc.pop(0)
+acc.reverse()
+print(acc)
+new=[]
+for i in range(len(acc)):
+    new.append(acc[i])
+    if (i+1)%3==0:
+        new.append(',')
+print(new)
+if new[-1]==',':
+    new.pop(-1)
+new.reverse()
+final=''
+for i in range(len(new)):
+    final+=new[i]
+print('your updated balance: $',final)
 #inventory
 inventory = {
 'gold' : 500,
@@ -60,3 +88,24 @@ print('the number ',s,'appears',oc,' times in the list')
 #with count()
 result=my_list.count(s)
 print('the number ',s,'appears',result,' times in the list')
+#stock and price
+total=0
+prices = {
+        "banana": 4,
+        "apple": 2,
+        "orange": 1.5,
+        "pear": 3
+}
+stock = {
+    "banana": 6,
+    "apple": 0,
+    "orange": 32,
+    "pear": 15
+}
+for key in prices:
+    total=total+prices[key]*stock[key]
+    print(key)
+    print('prices: ',prices[key])
+    print('stock: ',stock[key])
+    print()
+print(total)
